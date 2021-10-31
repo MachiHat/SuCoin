@@ -1,0 +1,62 @@
+.main-regist-wrap {
+    @include centerflex;
+    h1 {
+        font-family: CuatraBold;
+        font-size: 55px;
+        margin: 20px 0;
+        &::after{
+            content: ">>";
+            color: $llamaPink;
+            margin-left: 20px;
+            font-size: 30px;
+        }
+    }
+    .form-wrap {
+        display: flex;
+        flex-direction: column;
+        p {font-size: 12px;}
+        .regist-form {
+            display: flex;
+            flex-direction: column;
+            input {
+                color: #868E96;
+                border: 2px solid #CED4DA ;
+                border-radius: 1px;
+                background-color: transparent;
+                width: 21rem;
+                height: 2.5rem;
+                margin: 5px 0;
+                padding: 0 5px;
+            }
+            span {font-size: 12px;}
+        }
+        .regist-checkbox {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 14px;
+                input {
+                    border-radius: 0px;
+                    border: 2px #CED4DA;
+                    background: transparent;
+                }
+            }
+            
+        }
+        .regist-captcha {
+            .regist-btn {
+                color: #474747;
+                height: 2.5rem;
+                width: 20rem;
+                border: 2px solid #20949B;
+                background-color: transparent;
+                &:hover {
+                    border-color: #365897;
+                }
+            }
+        }
+    }
+    .regist-image {
+        img {min-height: 26rem; min-width: 32rem;}
+    }
+}

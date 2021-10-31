@@ -1,0 +1,34 @@
+/**   COLOR DEFS   **/
+
+$mainGreen: #20949B;
+$llamaPink: #FF4761;
+
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: #F2F2F2;
+    color: #474747;
+    margin: 0;
+    font-family: Gotham;
+}
+
+@mixin centerflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/** FONTS **/
+
+@font-face {
+    font-family: "CuatraBold";
+    src: url(../fonts/Cuatra/Cuatra-Bold.ttf);
+}
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/Gotham-Font/GothamBook.ttf);
+}
