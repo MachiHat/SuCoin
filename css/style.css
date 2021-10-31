@@ -39,13 +39,20 @@ html {
 .main-regist-wrap .form-wrap {
   display: flex;
   flex-direction: column;
+  padding: 0 5rem;
+  width: min-content;
 }
 .main-regist-wrap .form-wrap p {
-  font-size: 12px;
+  font-size: 16px;
+  margin: 0;
 }
 .main-regist-wrap .form-wrap .regist-form {
   display: flex;
   flex-direction: column;
+  width: min-content;
+}
+.main-regist-wrap .form-wrap .regist-form label {
+  margin-top: 15px;
 }
 .main-regist-wrap .form-wrap .regist-form input {
   color: #868E96;
@@ -55,43 +62,89 @@ html {
   width: 21rem;
   height: 2.5rem;
   margin: 5px 0;
-  padding: 0 5px;
 }
 .main-regist-wrap .form-wrap .regist-form span {
   font-size: 12px;
 }
+.main-regist-wrap .form-wrap .regist-form p {
+  text-align: center;
+  padding-top: 12px;
+}
+.main-regist-wrap .form-wrap .regist-form p a {
+  color: #365897;
+  text-decoration: none;
+}
+.main-regist-wrap .form-wrap .regist-form p a:hover {
+  text-decoration: underline;
+}
 .main-regist-wrap .form-wrap .regist-checkbox {
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
 }
-.main-regist-wrap .form-wrap .regist-checkbox label {
+.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap {
+  padding: 6px 0;
+}
+.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap label {
   font-size: 14px;
+  color: #070732;
 }
-.main-regist-wrap .form-wrap .regist-checkbox label input {
+.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap label a {
+  text-decoration: none;
+  color: #474747;
+}
+.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap label a:hover {
+  text-decoration: underline;
+}
+.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap label input {
   border-radius: 0px;
   border: 2px #CED4DA;
   background: transparent;
 }
+.main-regist-wrap .form-wrap .regist-captcha {
+  padding: 10px 0;
+  width: min-content;
+}
 .main-regist-wrap .form-wrap .regist-captcha .regist-btn {
   color: #474747;
+  font-size: 16px;
+  font-weight: 400;
   height: 2.5rem;
-  width: 20rem;
+  width: 21rem;
+  margin: 20px 0;
   border: 2px solid #20949B;
   background-color: transparent;
 }
 .main-regist-wrap .form-wrap .regist-captcha .regist-btn:hover {
   border-color: #365897;
+  font-weight: 600;
+  transition: 0.2 ease-in-out;
+}
+.main-regist-wrap .form-wrap .regist-captcha p {
+  color: #070732;
+  text-align: center;
+}
+.main-regist-wrap .form-wrap .regist-captcha a {
+  color: #474747;
+  text-decoration: none;
+}
+.main-regist-wrap .form-wrap .regist-captcha a:hover {
+  text-decoration: underline;
 }
 .main-regist-wrap .regist-image img {
-  min-height: 26rem;
-  min-width: 32rem;
+  max-height: 26rem;
+  max-width: 32rem;
+}
+.main-regist-wrap .login-image img {
+  max-height: 22.5rem;
+  max-width: 20rem;
 }
 
 .topnav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2rem 10rem;
+  margin: 2rem 8rem;
 }
 .topnav .topnav-logo-wrap {
   display: flex;
@@ -104,6 +157,9 @@ html {
 }
 .topnav .topnav-logo-wrap h2 {
   color: #20949B;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding-left: 5px;
 }
 .topnav .topnav-list {
   display: flex;
@@ -112,7 +168,7 @@ html {
 }
 .topnav .topnav-list .topnav-item {
   list-style: none;
-  margin: 0.5rem;
+  margin: 0.5rem 15px;
 }
 .topnav .topnav-list .topnav-item a {
   text-decoration: none;
@@ -121,7 +177,7 @@ html {
 .topnav .topnav-list .topnav-item a:hover {
   color: #000;
   font-weight: bold;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

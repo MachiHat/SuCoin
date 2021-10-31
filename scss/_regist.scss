@@ -14,10 +14,14 @@
     .form-wrap {
         display: flex;
         flex-direction: column;
-        p {font-size: 12px;}
+        padding: 0 5rem;
+        width: min-content;
+        p {font-size: 16px; margin: 0;}
         .regist-form {
             display: flex;
             flex-direction: column;
+            width: min-content;
+            label {margin-top: 15px;}
             input {
                 color: #868E96;
                 border: 2px solid #CED4DA ;
@@ -26,37 +30,70 @@
                 width: 21rem;
                 height: 2.5rem;
                 margin: 5px 0;
-                padding: 0 5px;
             }
             span {font-size: 12px;}
+            p {
+                text-align: center;
+                padding-top: 12px;
+                a {
+                    color: #365897;
+                    text-decoration: none;
+                    &:hover{text-decoration: underline;}
+                }
+            }
         }
         .regist-checkbox {
             display: flex;
             flex-direction: column;
-            label {
-                font-size: 14px;
-                input {
-                    border-radius: 0px;
-                    border: 2px #CED4DA;
-                    background: transparent;
+            padding: 10px 0;
+            .checkbox-wrap {
+                padding: 6px 0;
+                label {
+                    font-size: 14px;
+                    color: #070732;
+                    a {
+                        text-decoration: none;
+                        color: #474747;
+                        &:hover {text-decoration: underline;}
+                    }
+                    input {
+                        border-radius: 0px;
+                        border: 2px #CED4DA;
+                        background: transparent;  
+                    }
                 }
-            }
-            
+            }   
         }
         .regist-captcha {
+            padding: 10px 0;
+            width: min-content;
             .regist-btn {
                 color: #474747;
+                font-size: 16px;
+                font-weight: 400;
                 height: 2.5rem;
-                width: 20rem;
+                width: 21rem;
+                margin: 20px 0;
                 border: 2px solid #20949B;
                 background-color: transparent;
                 &:hover {
                     border-color: #365897;
+                    font-weight: 600;
+                    transition: 0.2 ease-in-out;
                 }
+            }
+            p {color: #070732; text-align: center;}
+            a {
+                color: #474747;
+                text-decoration: none;
+                &:hover {text-decoration: underline;}
             }
         }
     }
     .regist-image {
-        img {min-height: 26rem; min-width: 32rem;}
+        img {max-height: 26rem; max-width: 32rem;}
+    }
+    .login-image {
+       img {max-height: 22.5rem; max-width: 20rem;}
     }
 }
