@@ -1,23 +1,24 @@
-.main-regist-wrap {
+.main-form-container {
     @include centerflex;
     h1 {
         font-family: CuatraBold;
         font-size: 55px;
-        margin: 20px 0;
-        &::after{
+        margin: 20px 0;      
+        &.relog::after{
             content: ">>";
             color: $llamaPink;
             margin-left: 20px;
             font-size: 30px;
         }
     }
+    .verify-title {font-size: 46px;}
     .form-wrap {
         display: flex;
         flex-direction: column;
         padding: 0 5rem;
         width: min-content;
         p {font-size: 16px; margin: 0;}
-        .regist-form {
+        .form {
             display: flex;
             flex-direction: column;
             width: min-content;
@@ -42,7 +43,7 @@
                 }
             }
         }
-        .regist-checkbox {
+        .form-checkbox {
             display: flex;
             flex-direction: column;
             padding: 10px 0;
@@ -64,10 +65,10 @@
                 }
             }   
         }
-        .regist-captcha {
+        .btn-wrap {
             padding: 10px 0;
             width: min-content;
-            .regist-btn {
+            .form-btn {
                 color: #474747;
                 font-size: 16px;
                 font-weight: 400;
@@ -95,5 +96,8 @@
     }
     .login-image {
        img {max-height: 22.5rem; max-width: 20rem;}
+    }
+    .verifyAcc-image {
+        .verifyAcc-image-3 {position: absolute;}
     }
 }

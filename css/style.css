@@ -20,41 +20,44 @@ html {
   font-family: "Gotham";
   src: url(../fonts/Gotham-Font/GothamBook.ttf);
 }
-.main-regist-wrap {
+.main-form-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main-regist-wrap h1 {
+.main-form-container h1 {
   font-family: CuatraBold;
   font-size: 55px;
   margin: 20px 0;
 }
-.main-regist-wrap h1::after {
+.main-form-container h1.relog::after {
   content: ">>";
   color: #FF4761;
   margin-left: 20px;
   font-size: 30px;
 }
-.main-regist-wrap .form-wrap {
+.main-form-container .verify-title {
+  font-size: 46px;
+}
+.main-form-container .form-wrap {
   display: flex;
   flex-direction: column;
   padding: 0 5rem;
   width: min-content;
 }
-.main-regist-wrap .form-wrap p {
+.main-form-container .form-wrap p {
   font-size: 16px;
   margin: 0;
 }
-.main-regist-wrap .form-wrap .regist-form {
+.main-form-container .form-wrap .form {
   display: flex;
   flex-direction: column;
   width: min-content;
 }
-.main-regist-wrap .form-wrap .regist-form label {
+.main-form-container .form-wrap .form label {
   margin-top: 15px;
 }
-.main-regist-wrap .form-wrap .regist-form input {
+.main-form-container .form-wrap .form input {
   color: #868E96;
   border: 2px solid #CED4DA;
   border-radius: 1px;
@@ -63,49 +66,49 @@ html {
   height: 2.5rem;
   margin: 5px 0;
 }
-.main-regist-wrap .form-wrap .regist-form span {
+.main-form-container .form-wrap .form span {
   font-size: 12px;
 }
-.main-regist-wrap .form-wrap .regist-form p {
+.main-form-container .form-wrap .form p {
   text-align: center;
   padding-top: 12px;
 }
-.main-regist-wrap .form-wrap .regist-form p a {
+.main-form-container .form-wrap .form p a {
   color: #365897;
   text-decoration: none;
 }
-.main-regist-wrap .form-wrap .regist-form p a:hover {
+.main-form-container .form-wrap .form p a:hover {
   text-decoration: underline;
 }
-.main-regist-wrap .form-wrap .regist-checkbox {
+.main-form-container .form-wrap .form-checkbox {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
 }
-.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap {
+.main-form-container .form-wrap .form-checkbox .checkbox-wrap {
   padding: 6px 0;
 }
-.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap label {
+.main-form-container .form-wrap .form-checkbox .checkbox-wrap label {
   font-size: 14px;
   color: #070732;
 }
-.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap label a {
+.main-form-container .form-wrap .form-checkbox .checkbox-wrap label a {
   text-decoration: none;
   color: #474747;
 }
-.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap label a:hover {
+.main-form-container .form-wrap .form-checkbox .checkbox-wrap label a:hover {
   text-decoration: underline;
 }
-.main-regist-wrap .form-wrap .regist-checkbox .checkbox-wrap label input {
+.main-form-container .form-wrap .form-checkbox .checkbox-wrap label input {
   border-radius: 0px;
   border: 2px #CED4DA;
   background: transparent;
 }
-.main-regist-wrap .form-wrap .regist-captcha {
+.main-form-container .form-wrap .btn-wrap {
   padding: 10px 0;
   width: min-content;
 }
-.main-regist-wrap .form-wrap .regist-captcha .regist-btn {
+.main-form-container .form-wrap .btn-wrap .form-btn {
   color: #474747;
   font-size: 16px;
   font-weight: 400;
@@ -115,29 +118,32 @@ html {
   border: 2px solid #20949B;
   background-color: transparent;
 }
-.main-regist-wrap .form-wrap .regist-captcha .regist-btn:hover {
+.main-form-container .form-wrap .btn-wrap .form-btn:hover {
   border-color: #365897;
   font-weight: 600;
   transition: 0.2 ease-in-out;
 }
-.main-regist-wrap .form-wrap .regist-captcha p {
+.main-form-container .form-wrap .btn-wrap p {
   color: #070732;
   text-align: center;
 }
-.main-regist-wrap .form-wrap .regist-captcha a {
+.main-form-container .form-wrap .btn-wrap a {
   color: #474747;
   text-decoration: none;
 }
-.main-regist-wrap .form-wrap .regist-captcha a:hover {
+.main-form-container .form-wrap .btn-wrap a:hover {
   text-decoration: underline;
 }
-.main-regist-wrap .regist-image img {
+.main-form-container .regist-image img {
   max-height: 26rem;
   max-width: 32rem;
 }
-.main-regist-wrap .login-image img {
+.main-form-container .login-image img {
   max-height: 22.5rem;
   max-width: 20rem;
+}
+.main-form-container .verifyAcc-image .verifyAcc-image-3 {
+  position: absolute;
 }
 
 .topnav {
@@ -160,6 +166,7 @@ html {
   font-weight: bolder;
   letter-spacing: 2px;
   padding-left: 5px;
+  font-family: CuatraBold;
 }
 .topnav .topnav-list {
   display: flex;
