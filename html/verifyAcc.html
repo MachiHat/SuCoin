@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css">
     <title>BITNOA | VERIFICA TU CUENTA</title>
 </head>
 
 <body>
-
-    <!--  TOP NAV  -->
 
     <nav class="topnav">
         <div class="topnav-logo-wrap">
@@ -19,44 +19,143 @@
             <h2>BITNOA</h2>
         </div>
         <ul class="topnav-list">
-            <li class="topnav-item"><a href="">Preguntas Frecuentes</a></li>
+            <li class="topnav-item alternative"><a class="alternative" href="">Preguntas Frecuentes</a></li>
             <li class="topnav-item"><a href="">Contacto</a></li>
             <li class="topnav-item"><a href="">Login</a></li>
             <li class="topnav-item"><a href="">Registrate</a></li>
         </ul>
     </nav>
 
-    <!--  TOP NAV END  -->
+    <section class="main-container">
 
-    <!--  VERIFY ACC  -->
-
-    <section class="main-form-container">
-
-        <div class="form-wrap">
-            <h1 class="verify-title">Verificá tu cuenta</h1>
-            <p>Te pedimos que confirmes tu número de celular 
-                para asegurar tu cuenta y sumar otro medio 
-                para comunicarnos con vos</p>     
-            <div class="form">
-                <label for="phoneNum">Número de teléfono </label>
-                <input type="text" placeholder="Ej: 11 6528 8302" name="phoneNum" class="form-input">
-                <span>Vas a recibir un código de verificación de seis digitos por WhatsApp. 
-                    Este mensaje puede demorar unos minutos y no tiene costo alguno</span>
-                <label for="verifyCode">Ingresá el código que recibiste por WhatsApp</label>
-                <input type="text" placeholder="**********" name="verifyCode" class="form-input">
+        <div class="step-container">
+            <div class="form-wrap">
+                <h1 class="verify-title">Verificá tu cuenta</h1>
+                <p>Te pedimos que confirmes tu número de celular
+                    para asegurar tu cuenta y sumar otro medio
+                    para comunicarnos con vos</p>
+                <div class="form">
+                    <label for="phoneNum">Número de teléfono </label>
+                    <input type="text" placeholder="Ej: 11 6528 8302" name="phoneNum" class="form-input">
+                    <span class="phone-danger">Ingresar nro sin el 0 y sin el 15. Ej: 11 652890</span>
+                    <span>Vas a recibir un código de verificación de seis digitos por WhatsApp.
+                        Este mensaje puede demorar unos minutos y no tiene costo alguno</span>
+                    <label for="verifyCode">Ingresá el código que recibiste por WhatsApp</label>
+                    <input type="text" placeholder="-" name="verifyCode" class="form-input">
+                </div>
+                <div class="btn-wrap">
+                    <button class="form-btn">Siguiente</button>
+                    <p><a href="">Omitir</a></p>
+                </div>
             </div>
-            <div class="btn-wrap">   
-                <button class="form-btn">Siguiente</button>
-                <p><a href="">Omitir</a></p>
-            </div>
-        </div>
 
-        <div class="verifyAcc-image">
-            <img src="../img/verifyLaptop.png" alt="" class="">
+            <div class="verifyAcc-image">
+                <img src="../img/verifyLaptop.png" alt="" class="">
+            </div>
         </div>
 
     </section>
-    
+
+    <section class="main-container">
+        <div class="floating-container">
+            <div class="center-container">
+                <h2>Podés ingresar hasta ARS 35.000,00</h2>
+                <p>Para activar el “Doble factor de Autenticación” observá previamente los siguientes pasos y realizalos
+                    luego de haber comprendido</p>
+                <div class="horizontal-container">
+                    <img src="../img/qrVerifyCode.png" alt="">
+                    <div class="vertical-container">
+                        <span>Recordá conservar esta clave!</span>
+                        <span>381653809787943238479 <a href=""><i class="fas fa-copy"></i></a></span>
+                        <label for=""></label>
+                        <input type="text">
+                    </div>
+                    <button>Comprobar</button>
+                </div>
+            </div>
+            <img src="../img/floatingEdgeFiller.png" alt="">
+        </div>
+
+        <div class="floating-container">
+            <ul>
+                <li class="confirm-list-item">Descargar la versión de la app 'Google Authenticator' acorde al sistema
+                    operativo de tu dispositivo.</li>
+                <li class="confirm-list-item"><b>IMPORTANTE</b>, conservá la clave de autenticación. Si pierdes acceso a
+                    su cuenta de Google Authenticator, la única forma de restaurarla es con la clave que el sistema te
+                    indica en este momento que guardes, esta clave no va a ser mostrada en ningún otro momento, sólo
+                    ahora: ejv2jpducgujprmY</li>
+                <li class="confirm-list-item"><b>Escanéa el código QR</b> con la app "Google Authenticator", luego
+                    <b>ingresá el PIN</b> de 6 dígitos generado por la app y hacé click en Comprobar. El PIN se regenera
+                    cada 30 segundos.
+                    Si presentás inconvenientes para la vinculación mediante el escaneo del código podrás hacerlo
+                    ingresando manualmente la Clave de Autenticación otorgada</li>
+                <li class="confirm-list-item">Una vez realizada la asociación con el "Authenticador de Google", <b>NO
+                        DESINSTALES LA APLICACIÓN. <br>
+                        Necesitarás usarla siempre para operar en el sitio</b>, cada vez que el sitio le requiera un
+                    PIN, deberás ingresar el PIN que se muestra en ese momento, cada PIN tiene validez por 30 segundos.
+                </li>
+            </ul>
+        </div>
+
+        <div class="floating-container">
+            <p class="pin-text">
+                <b>¿Tenés problema con el PIN?</b> <br>
+                Si el sistema te informa pin incorrecto es porque puede estar sucediendo una de la siguientes cosas:
+                <br>
+                • El celular tiene la fecha y hora incorrecta, sólo un minuto de diferencia ya genera códigos errórneos,
+                es recomendable tenerlo en fecha y hora automática. <br>
+                • No estás usando “Google Authenticator” oficial (sólo funciona ese, ninguna copia que diga ser
+                compatible funciona). <br>
+                • Tu celular se encuentra en una zona horaria incorrecta, debe estar en GMT -3. <br>
+                • Tu conexión a internet es muy lenta y los PIN expiran antes que lleguen al servidor para validarse. En
+                ese caso se recomienda dejar que venza el PIN que muestra el Google Authenticator y poner apenas
+                aparezca el nuevo, cada PIN dura 30 segundos. <br>
+                • Verificar en la opción dentro del Google Authenticator, "Configuración", "Corrección de hora para
+                códigos", "Sincronizar ahora", luego de hacer esto, volver a probar. <br>
+                • Recordá que cada vez que ingreses un pin y el mismo te diga pin erróneo, la página recargará y te
+                generará un nuevo QR o clave, por lo cual deberás escanear nuevamente el QR o ingresar manualmente la
+                clave ya que la anterior no te servirá más.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="main-container">
+        <div class="step-container">
+            <div class="form-wrap">
+                <h1 class="verify-title">Verificá tu cuenta</h1>
+                <p>Necesitamos una foto de tu DNI, frente y dorso, además una selfie con el DNI en mano junto a una nota
+                    manuscrita (Foto a color, recta, nítida, de buena calidad y resolución. Cada imágen no podrá superar
+                    los 40Mb)</p>
+                <div class="file-submit-wrap">
+                    <label for="upload-photo">
+                        Subí la imagen del<br>
+                        <b>Frente de tu DNI</b><br>
+                        (.jpg ó .png)
+                    </label>
+                    <input type="file" name="photo" class="upload-photo" />
+                    <label for="upload-photo">
+                        Subí la imagen del<br>
+                        <b>Dorso de tu DNI</b><br>
+                        (.jpg ó .png)
+                    </label>
+                    <input type="file" name="photo" class="upload-photo" />
+                    <label for="upload-photo">
+                        Subí una selfie con DNI en mano <br>
+                        y una nota que diga <br>
+                        <b>“Verificación en Bitnoa. <br>
+                        Dirección de email y teléfono”</b> <br>
+                        (.jpg ó .png)
+                    </label>
+                    <input type="file" name="photo" class="upload-photo" />
+                </div>
+                <div class="btn-wrap">
+                    <button class="form-btn">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

@@ -1,0 +1,59 @@
+.floating-container {
+    display: flex;
+    color: #222;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 2px #ddd;
+    margin: 5rem 7rem;
+    img {width: 125px; height: 125px;}
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        padding-right: 35px;
+        h2 {margin: 10px 0;}
+        p {margin-top: 0; margin-bottom: 25px;}
+        .horizontal-container {
+            display: flex;
+            flex-direction: row;
+            button { margin-top: 70px;}
+            .vertical-container {
+                @include centerflex;
+                flex-direction: column;
+                margin: 10px;
+                input {
+                border: none;
+                border-bottom: solid 1px;
+                width: max-content;
+                }
+                span {
+                margin: 5px;
+                text-align: left;
+                width: max-content;
+                }
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        .confirm-list-item {
+            font-size: 18px;
+            margin: 20px 30px 20px 10px;
+            &::before{
+                color:#365897;
+                content: "•";
+                font-size: 20px;
+                list-style-position: outside;
+                display: inline-block;
+                width: 1rem;
+                margin-left: -1rem;
+            }
+        }
+    }
+    .pin-text {
+        color: #365897;
+        font-size: 17px;
+        line-height: 34px;
+        font-weight: 500;
+        margin: 30px 70px;
+    }
+}

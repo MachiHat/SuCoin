@@ -30,28 +30,80 @@
 
     <!--  VERIFY ACC  -->
 
-    <section class="main-form-container">
+    <section class="main-container">
 
-        <div class="form-wrap">
-            <h1 class="verify-title">Recuperá tu contraseña</h1>
-            <p>Para poder recuperar tu contraseña te vamos a solicitar tu 
-                direcciñon de email para enviarte el link de reseteo de la misma</p>     
-            <div class="form">
-                <label for="email">E-mail</label>
-                <input type="text" placeholder="bitnoauser@gmail.com" name="email" class="form-input">
+        <!--step 1-->
+        <div class="step-container">
+            <div class="form-wrap">
+                <h1 class="verify-title">Recuperá tu contraseña</h1>
+                <p>Para poder recuperar tu contraseña te vamos a solicitar tu
+                    dirección de email para enviarte el link de reseteo de la misma</p>
+                <div class="form">
+                    <label for="email">E-mail</label>
+                    <input type="text" placeholder="bitnoauser@gmail.com" name="email" class="form-input">
+                </div>
+                <div class="btn-wrap">
+                    <button class="form-btn">Siguiente</button>
+                    <p>¿Ya tienes una cuenta? <a href="">Iniciá Sesión</a></p>
+                </div>
             </div>
-            <div class="btn-wrap">   
-                <button class="form-btn">Siguiente</button>
-                <p>¿Ya tienes una cuenta? <a href="">Iniciá Sesión</a></p>
+
+            <div class="verifyAcc-image">
+                <img src="../img/candado.png" alt="" class="">
             </div>
         </div>
 
-        <div class="verifyAcc-image">
-            <img src="../img/candado.png" alt="" class="">
+        <!--step 2-->
+        <div class="step-container">
+            <div class="form-wrap">
+                <h1 class="verify-title">Recuperá tu contraseña</h1>
+                <p>Recibirás un mail a loremipsum@lorem.com,
+                    revisa tu carpeta de spam</p>
+            </div>
+
+            <div class="verifyAcc-image">
+                <img src="../img/candado.png" alt="" class="">
+            </div>
+        </div>
+
+        <!--step 3-->
+        <div class="step-container">
+            <div class="form-wrap">
+                <h1 class="verify-title">Recuperá tu contraseña</h1>
+                <label for="pass">Contraseña</label>
+                <form class="form" action="">
+                    <input type="password" placeholder="**********" name="pass" class="form-input">
+                    <span>Debe contener una minúscula, una mayúscula, un caracter especial, un número, 8-20
+                        caracteres</span>
+                    <label for="repass">Repetir contraseña</label>
+                    <input type="password" placeholder="**********" name="repass" class="form-input">
+                </form>
+                <div class="btn-wrap">
+                    <button class="form-btn">Siguiente</button>
+                    <p>¿Ya tienes una cuenta? <a href="">Iniciá Sesión</a></p>
+                </div>
+            </div>
+
+            <div class="verifyAcc-image">
+                <img src="../img/candado.png" alt="" class="">
+            </div>
+        </div>
+
+        <!--step 4-->
+        <div class="step-container">
+            <div class="form-wrap">
+                <h1 class="verify-title">Contraseña reestablecida!</h1>
+                <span>Ya podes ingresar al sitio!</span>
+                <button class="btn-blue">Ingresar</button>
+            </div>
+
+            <div class="verifyAcc-image">
+                <img src="../img/candado.png" alt="" class="">
+            </div>
         </div>
 
     </section>
-    
+
 </body>
 
 </html>

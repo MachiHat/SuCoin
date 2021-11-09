@@ -20,7 +20,6 @@
     .topnav-list {
         display: flex;
         flex-direction: row;
-        padding: auto;
         .topnav-item {
             list-style: none;
             margin: 0.5rem 15px;
@@ -30,6 +29,15 @@
                 &:hover {
                     color: #000;
                     font-weight: bold;
+                    transition: 0.2s ease;
+                }
+            }
+            .alternative {
+                color: #20949B;
+                font-weight: bolder;
+                font-family: CuatraBold;
+                &:hover {
+                    color: $llamaPink;
                     transition: 0.2s ease;
                 }
             }

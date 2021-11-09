@@ -14,7 +14,23 @@ html {
     background-color: #F2F2F2;
     color: #474747;
     margin: 0;
-    font-family: Gotham;
+    font-family: Avenir;
+}
+
+// BUTTONS
+
+.btn-blue {
+    color: #fff;
+    background-color: #365897;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    height: 44px;
+    width: 180px;
+    &:hover {
+        background-color: #20949B;
+        transition: 0.2s ease-in-out;
+    }
 }
 
 @mixin centerflex {
@@ -32,4 +48,8 @@ html {
 @font-face {
     font-family: "Gotham";
     src: url(../fonts/Gotham-Font/GothamBook.ttf);
+}
+@font-face {
+    font-family: "Avenir";
+    src: url(../fonts/avenir_ff/AvenirLTStd-Roman.otf);
 }
