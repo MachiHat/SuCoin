@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss:watch": "sass --watch scss/style.scss css/style.css",
+    "start:dev": "npm run scss:watch"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +17,10 @@
     "url": "https://github.com/MachiHat/SuCoin/issues"
   },
   "homepage": "https://github.com/MachiHat/SuCoin#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sass": "^1.43.4"
+  }
 }
